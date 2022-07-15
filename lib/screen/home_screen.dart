@@ -94,10 +94,9 @@ class HomeScreen extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
             child: Row(
-              children: const [
-                TicketView(),
-                TicketView(),
-              ],
+              children: ticketList
+                  .map((singleTicket) => TicketView(ticket: singleTicket))
+                  .toList(),
             ),
           ),
           const Gap(15),
@@ -123,12 +122,10 @@ class HomeScreen extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(left: 20),
             child: Row(
-                //     children: hotelList
-                //         .map((singleHotel) => HomeScreen(hotel: singleHotel))
-                //         .toList()),
-                children: hotelList
-                    .map((singleHotel) => HotelScreen(hotel: singleHotel))
-                    .toList()),
+              children: hotelList
+                  .map((singleHotel) => HotelScreen(hotel: singleHotel))
+                  .toList(),
+            ),
           ),
         ],
       ),
