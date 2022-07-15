@@ -20,7 +20,7 @@ class AppLayout {
   }
 
   static getWidth(double pixels) {
-    double x = getScreenWidth()() / pixels;
+    double x = getScreenWidth() / pixels;
     return getScreenWidth() / x;
   }
 }
