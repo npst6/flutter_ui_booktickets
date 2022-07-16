@@ -1,3 +1,5 @@
+import 'package:booktickets/screen/ticket_screen.dart';
+
 import '../screen/home_screen.dart';
 import '../screen/search_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +17,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const SearchScreen(),
-    const Text("Tickets"),
+    const TicketScreen(),
     const Text("Profile"),
   ];
 
