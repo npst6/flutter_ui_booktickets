@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:gap/gap.dart';
 import '../utils/app_style.dart';
 import '../utils/app_layout.dart';

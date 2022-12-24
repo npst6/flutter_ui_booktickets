@@ -1,17 +1,20 @@
-import 'package:booktickets/widgets/column_layout.dart';
-import 'package:booktickets/widgets/layout_builder_widget.dart';
 import 'package:gap/gap.dart';
+import '/utils/app_style.dart';
 import 'package:get/utils.dart';
-import '../utils/app_style.dart';
-import '../utils/app_layout.dart';
+import '/utils/app_layout.dart';
+import '/widgets/column_layout.dart';
 import 'package:flutter/material.dart';
-import '../widgets/thick_container.dart';
+import '/widgets/thick_container.dart';
+import '/widgets/layout_builder_widget.dart';
 
 class TicketView extends StatelessWidget {
   final Map<String, dynamic> ticket;
   final bool? isColor;
-  const TicketView({Key? key, required this.ticket, this.isColor})
-      : super(key: key);
+  const TicketView({
+    super.key,
+    required this.ticket,
+    this.isColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +27,7 @@ class TicketView extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            /*
-              showing the blue part of the card/ticket
-            */
+            /* showing the blue part of the card/ticket */
             Container(
               decoration: BoxDecoration(
                 color: isColor == null ? const Color(0xFF526799) : Colors.white,
@@ -46,17 +47,13 @@ class TicketView extends StatelessWidget {
                                   .copyWith(color: Colors.white)
                               : Styles.headLineStyle3),
                       Expanded(child: Container()),
-                      const ThickContainer(
-                        isColor: true,
-                      ),
+                      const ThickContainer(isColor: true),
                       Expanded(
                         child: Stack(
                           children: [
                             SizedBox(
                               height: AppLayout.getHeight(24),
-                              child: const AppLayoutbuilderWidget(
-                                section: 6,
-                              ),
+                              child: const AppLayoutbuilderWidget(section: 6),
                             ),
                             Center(
                               child: Transform.rotate(
@@ -72,9 +69,7 @@ class TicketView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const ThickContainer(
-                        isColor: true,
-                      ),
+                      const ThickContainer(isColor: true),
                       Expanded(child: Container()),
                       Text(ticket['to']['code'],
                           style: isColor == null
@@ -118,9 +113,7 @@ class TicketView extends StatelessWidget {
                 ],
               ),
             ),
-            /*
-              showing the orange part of the card/ticket
-            */
+            /* showing the orange part of the card/ticket */
             Container(
               color: isColor == null
                   ? Styles.orangeColor

@@ -1,17 +1,9 @@
-# booktickets
+# flutter_ui_booktickets
 
-A new Flutter project.
+![flutter ui booktickets file 1](https://user-images.githubusercontent.com/52483128/209451063-27ee8ad5-6e15-45a0-a204-ec44b647c8f9.png)
 
-## Getting Started
+![flutter ui booktickets file 2](https://user-images.githubusercontent.com/52483128/209451069-6b23fc17-fe66-4527-8dde-458d3bdfb6e0.png)
 
-This project is a starting point for a Flutter application.
+![flutter ui booktickets file 3](https://user-images.githubusercontent.com/52483128/209451070-4e385064-eeb6-474a-ba80-301448295981.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# booktickets
+![flutter ui booktickets file 4](https://user-images.githubusercontent.com/52483128/209451072-582b1003-fe36-4bfd-bf1c-164ac52c84db.png)

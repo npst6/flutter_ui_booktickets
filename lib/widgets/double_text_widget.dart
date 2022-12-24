@@ -1,12 +1,17 @@
-import '../utils/app_style.dart';
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
+
+import '/utils/app_style.dart';
 
 class AppDoubleTextWidget extends StatelessWidget {
   final String bigText;
   final String smallText;
-  const AppDoubleTextWidget(
-      {Key? key, required this.bigText, required this.smallText})
-      : super(key: key);
+  const AppDoubleTextWidget({
+    super.key,
+    required this.bigText,
+    required this.smallText,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,15 @@
 import 'package:gap/gap.dart';
-import '../utils/app_style.dart';
-import '../screen/ticket_view.dart';
-import '../screen/hotel_screen.dart';
-import '../utils/app_info_list.dart';
 import 'package:flutter/material.dart';
-import '../widgets/double_text_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 
+import '/utils/app_style.dart';
+import '/screen/ticket_view.dart';
+import '/screen/hotel_screen.dart';
+import '/utils/app_info_list.dart';
+import '/widgets/double_text_widget.dart';
+
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

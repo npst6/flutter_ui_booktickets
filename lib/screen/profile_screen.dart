@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:gap/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:booktickets/utils/app_style.dart';
@@ -5,7 +7,6 @@ import 'package:booktickets/utils/app_layout.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:booktickets/widgets/column_layout.dart';
 import 'package:booktickets/widgets/layout_builder_widget.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -141,13 +142,13 @@ class ProfileScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
+                      maxRadius: 25,
+                      backgroundColor: Colors.white,
                       child: Icon(
                         FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
                         color: Styles.primaryColor,
                         size: 27,
                       ),
-                      maxRadius: 25,
-                      backgroundColor: Colors.white,
                     ),
                     Gap(AppLayout.getHeight(12)),
                     Column(

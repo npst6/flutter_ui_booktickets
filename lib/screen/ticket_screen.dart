@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:gap/gap.dart';
 import '../utils/app_style.dart';
 import '../utils/app_layout.dart';
@@ -14,6 +16,7 @@ class TicketScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final size = AppLayout.getSize(context);
     return Scaffold(
       backgroundColor: Styles.bgColor,
